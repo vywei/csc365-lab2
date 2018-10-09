@@ -2,10 +2,11 @@ import csv
 import sys
 
 def main():
-    if len(sys.argv) != 3:
-        print "Usage: python convertToSQL.py <csv input file name> <sql output file name>\n **No filename Extensions**"
+    if len(sys.argv) != 4:
+        print "Usage: python convertToSQL.py <csv input file name> <table name> <sql output file name>\n **No filename Extensions**"
     csvName = sys.argv[1]
-    sqlName = sys.argv[2]
+    tableName = sys.argv[2]
+    sqlName = sys.argv[3]
     sqlFile = open("%s.sql" % sqlName, "w")
 
 
@@ -13,7 +14,7 @@ def main():
         readCSV = csv.reader(csvfile, delimiter=',')
         key = next(readCSV)
         for row in readCSV:
-            sqlFile.write("INSERT INTO %s (" % sqlName + ', '.join(key) + ") \n    VALUES (" + ', '.join(row) + ");\n")
+            sqlFile.write("INSERT INTO %s (" % tableName + ', '.join(key) + ") \n    VALUES (" + ', '.join(row) + ");\n")
 
     sqlFile.close()
 
