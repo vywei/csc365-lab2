@@ -1,11 +1,11 @@
-CREATE TABLE CarNames(
+CREATE TABLE CarNames (
     MakeId INT,
     Model VARCHAR(20),
     MakeDescription VARCHAR(50),
-    PRIMARY KEY (Id)
+    PRIMARY KEY (MakeId)
 );
 
-CREATE TABLE CarMakers(
+CREATE TABLE CarMakers (
     Id INT,
     Maker VARCHAR(20),
     Country INT,
@@ -13,7 +13,7 @@ CREATE TABLE CarMakers(
     PRIMARY KEY (Id)
 );
 
-CREATE TABLE CarData(
+CREATE TABLE CarData (
     Id INT references CarNames (MakeId),
     MPG INT,
     Cylinders INT,
@@ -25,13 +25,13 @@ CREATE TABLE CarData(
     PRIMARY KEY (Id)
 );
 
-CREATE TABLE Continents(
+CREATE TABLE Continents (
     ContId INT,
-    Continent VARCHAR(20)
+    Continent VARCHAR(20),
     PRIMARY KEY (ContId)  
 );
 
-CREATE TABLE Countries(
+CREATE TABLE Countries (
     CountryId INT,
     CountryName VARCHAR(30),
     Continent INT references Continents (ContId),
@@ -41,7 +41,7 @@ CREATE TABLE Countries(
 CREATE TABLE ModelList ( 
     ModelId INT,
     Maker INT references CarMakers (Id),
-    Model VARCHAR(30)
+    Model VARCHAR(30),
     PRIMARY KEY (ModelId)
 );
 
