@@ -35,10 +35,12 @@ CREATE TABLE enrollments (
     Year INT,
     TotalEnrollment_AY INT,
     FTE_AY INT,
-    FOREIGN KEY (Campus) references campuses(Id) ON DELETE CASCADE);
+    FOREIGN KEY (Campus) references campuses(Id) ON DELETE CASCADE,
+    PRIMARY KEY (Campus, Year));
 
 CREATE TABLE faculty (
     Campus INT,
     Year INT,
     Faculty INT,
-    FOREIGN KEY (Campus) references campuses(Id) ON DELETE CASCADE);
+    FOREIGN KEY (Campus) references campuses(Id) ON DELETE CASCADE,
+    PRIMARY KEY (Campus, Year));
