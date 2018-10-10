@@ -1,6 +1,4 @@
 INSERT INTO degrees (Year, Campus, Degrees) 
-    VALUES ();
-INSERT INTO degrees (Year, Campus, Degrees) 
     VALUES (1990, 1, 701);
 INSERT INTO degrees (Year, Campus, Degrees) 
     VALUES (1991, 1, 681);
