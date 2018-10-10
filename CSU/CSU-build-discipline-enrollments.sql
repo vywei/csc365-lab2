@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO disciplineEnrollments (Campus, Discipline, Year, Undergraduate, Graduate) 
     VALUES (1, 4, 2004, 248, 0);
 INSERT INTO disciplineEnrollments (Campus, Discipline, Year, Undergraduate, Graduate) 

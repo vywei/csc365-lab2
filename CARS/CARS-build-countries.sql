@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO Countries (CountryId, CountryName, Continent) 
     VALUES (1, 'usa', 1);
 INSERT INTO Countries (CountryId, CountryName, Continent) 

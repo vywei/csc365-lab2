@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO degrees (Year, Campus, Degrees) 
     VALUES (1990, 1, 701);
 INSERT INTO degrees (Year, Campus, Degrees) 

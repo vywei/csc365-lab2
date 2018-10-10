@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 SELECT COUNT(*) AS Campuses FROM campuses;
 SELECT COUNT(*) AS CSUFees FROM csuFees;
 SELECT COUNT(*) AS Degrees FROM degrees;

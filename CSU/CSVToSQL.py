@@ -1,3 +1,6 @@
+#Victor Wei
+#vywei@calpoly.edu
+
 import csv
 import sys
 

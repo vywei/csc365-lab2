@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO csuFees (Campus, Year, CampusFee) 
     VALUES (1, 1996, 1951);
 INSERT INTO csuFees (Campus, Year, CampusFee) 

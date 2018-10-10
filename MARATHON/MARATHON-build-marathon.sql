@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO Marathon (Place, mTime, Pace, GroupPlace, mGroup, Age, Sex, BIBNumber,  FirstName,  LastName,  Town,  mState) 
     VALUES (1, '1:09:47', '5:20', 1, '20-39', 37, 'M', 340, 'ANDRE',  'PELLAM',  'HALIFAX', 'MA');
 INSERT INTO Marathon (Place, mTime, Pace, GroupPlace, mGroup, Age, Sex, BIBNumber,  FirstName,  LastName,  Town,  mState) 

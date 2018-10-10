@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO CarData (Id, MPG, Cylinders, Edispl, Horsepower, cWeight, Accelerate, cYear) 
     VALUES (1, 18, 8, 307, 130, 3504, 12, 1970);
 INSERT INTO CarData (Id, MPG, Cylinders, Edispl, Horsepower, cWeight, Accelerate, cYear) 

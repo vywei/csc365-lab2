@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 CREATE TABLE campuses (
     Id INT,
     Campus VARCHAR(60),

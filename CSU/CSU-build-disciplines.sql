@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO disciplines (Id, Name) 
     VALUES (1, 'Agriculture');
 INSERT INTO disciplines (Id, Name) 

@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO enrollments (Campus, Year, TotalEnrollment_AY, FTE_AY) 
     VALUES (1, 1956, 384, 123);
 INSERT INTO enrollments (Campus, Year, TotalEnrollment_AY, FTE_AY) 

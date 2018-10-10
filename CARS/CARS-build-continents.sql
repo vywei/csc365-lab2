@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO Continents (ContId, Continent) 
     VALUES (1, 'america');
 INSERT INTO Continents (ContId, Continent) 

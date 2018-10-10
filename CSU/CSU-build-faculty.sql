@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO faculty (Campus, Year, Faculty) 
     VALUES ();
 INSERT INTO faculty (Campus, Year, Faculty) 

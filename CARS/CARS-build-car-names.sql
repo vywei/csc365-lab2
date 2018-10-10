@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO CarNames (MakeId, Model, MakeDescription) 
     VALUES (1, 'chevrolet', 'chevrolet chevelle malibu');
 INSERT INTO CarNames (MakeId, Model, MakeDescription) 

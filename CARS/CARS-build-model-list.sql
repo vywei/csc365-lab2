@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO ModelList (ModelId, Maker, Model) 
     VALUES (1, 1, 'amc');
 INSERT INTO ModelList (ModelId, Maker, Model) 

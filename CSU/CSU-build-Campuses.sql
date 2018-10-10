@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO campuses (Id, Campus, Location, County, Year) 
     VALUES (1, 'California State University-Bakersfield', 'Bakersfield', 'Kern', 1965);
 INSERT INTO campuses (Id, Campus, Location, County, Year) 

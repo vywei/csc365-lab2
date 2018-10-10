@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 INSERT INTO CarMakers (Id, Maker, FullName, Country) 
     VALUES (1, 'amc', 'American Motor Company', 1);
 INSERT INTO CarMakers (Id, Maker, FullName, Country) 
