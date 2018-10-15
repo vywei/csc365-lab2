@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 CREATE TABLE Marathon (
     Place INT,
     mTime TIME,
