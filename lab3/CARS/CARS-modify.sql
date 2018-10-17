@@ -12,7 +12,7 @@
     (Cylinders = 8 AND Accelerate < 10)*/
 DELETE FROM CarData WHERE ((cYear != 1979 AND cYear != 1980) OR MPG < 20) AND
     (MPG < 26 OR Horsepower <= 110) AND
-    (Cylinders != 8 OR Accelerate >= 10)
+    (Cylinders != 8 OR Accelerate >= 10);
 
 /*Run the SQL query*/
 SELECT *
@@ -22,7 +22,7 @@ ORDER BY cYear, Id;
 /*Remove from the car data table all attributes except car id, car year, 
 acceleration, MPG, and number of cylinders*/
 ALTER TABLE CarData
-    DROP Edispl, Horsepower, cWeight;
+    DROP Edispl, DROP Horsepower, DROP cWeight;
 
 /*Remove from the car data table information about all cars with 
 5 cylinders or fewer*/
