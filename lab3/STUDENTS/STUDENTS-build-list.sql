@@ -1,6 +1,8 @@
-/*  Edward Kesicki
-    ekesicki@calpoly.edu 
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
 */
+
 INSERT INTO list (LastName,  FirstName,  Grade,  Classroom) 
     VALUES ('CAR',  'MAUDE',  2,  101);
 INSERT INTO list (LastName,  FirstName,  Grade,  Classroom) 

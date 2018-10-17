@@ -1,6 +1,8 @@
-/*  Edward Kesicki
-    ekesicki@calpoly.edu 
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
 */
+
 INSERT INTO teachers (LastName,  FirstName,  Classroom) 
     VALUES ('MACROSTIE',  'MIN',  101);
 INSERT INTO teachers (LastName,  FirstName,  Classroom) 

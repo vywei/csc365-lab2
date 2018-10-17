@@ -1,6 +1,8 @@
-/*  Edward Kesicki
-    ekesicki@calpoly.edu   
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
 */
+
 CREATE TABLE list (
     LastName VARCHAR(40),
     FirstName VARCHAR(40),
