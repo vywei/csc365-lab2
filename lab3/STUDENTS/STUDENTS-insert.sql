@@ -1,7 +1,9 @@
-/*
-Victor Wei - vywei@calpoly.edu
-Eddie Kesicki - ekesicki@calpoly.edu
+/* Edward Kesicki
+   ekesicki@calpoly.edu
+
+   Victor Wei
+   vywei@calpoly.edu
 */
 
-source STUDENTS-build-list.sql
-source STUDENTS-build-teachers.sql
+SOURCE STUDENTS-build-list.sql;
+SOURCE STUDENTS-build-teachers.sql; 
