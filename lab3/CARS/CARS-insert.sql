@@ -1,3 +1,8 @@
+/*
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+*/
+
 source CARS-build-car-makers.sql
 source CARS-build-car-names.sql
 source CARS-build-cars-data.sql
