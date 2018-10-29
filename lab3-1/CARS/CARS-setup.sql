@@ -5,7 +5,7 @@ Eddie Kesicki - ekesicki@calpoly.edu
 
 CREATE TABLE CarNames (
     MakeId INT,
-    Model VARCHAR(20) references ModelList (ModelId),
+    Model VARCHAR(20),
     MakeDescription VARCHAR(50),
     PRIMARY KEY (MakeId)
 );
@@ -13,7 +13,7 @@ CREATE TABLE CarNames (
 CREATE TABLE CarMakers (
     Id INT,
     Maker VARCHAR(20),
-    Country INT references Countries (CountryId),
+    Country INT,
     FullName VARCHAR(50),
     PRIMARY KEY (Id)
 );
@@ -25,7 +25,7 @@ CREATE TABLE CarData (
     Edispl INT,
     Horsepower INT,
     cWeight INT,
-    Accelerate DOUBLE(4, 3), 
+    Accelerate INT, 
     cYear INT,
     PRIMARY KEY (Id)
 );

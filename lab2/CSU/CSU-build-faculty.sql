@@ -4,8 +4,6 @@ Eddie Kesicki - ekesicki@calpoly.edu
 */
 
 INSERT INTO faculty (Campus, Year, Faculty) 
-    VALUES ();
-INSERT INTO faculty (Campus, Year, Faculty) 
     VALUES (1, 2002, 357.1);
 INSERT INTO faculty (Campus, Year, Faculty) 
     VALUES (2, 2002, 48.4);

@@ -1,0 +1,14 @@
+Victor Wei - vywei@calpoly.edu
+Eddie Kesicki - ekesicki@calpoly.edu
+
+Pair handin for lab3
+Contains CARS and STUDENTS directories
+To create the tables in mysql:
+    - Run <directory-name>-setup.sql
+    - Run <directory-name>-insert.sql
+
+Then to modify the data:
+    - Run <directory-name>-modify.sql
+
+To clear all tables:
+    - Run <directory-name>-cleanup.sql
