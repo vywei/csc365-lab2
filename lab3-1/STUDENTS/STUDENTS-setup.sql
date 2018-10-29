@@ -7,7 +7,7 @@ CREATE TABLE list (
     LastName VARCHAR(40),
     FirstName VARCHAR(40),
     Grade INT,
-    Classroom INT,
+    Classroom INT references teachers(Classroom),
     PRIMARY KEY (LastName, FirstName)
 );
 

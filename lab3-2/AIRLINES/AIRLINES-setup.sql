@@ -22,7 +22,7 @@ CREATE TABLE airports100(
 CREATE TABLE flights(
     Airline INT,
     FlightNo INT,
-    SourceAirport VARCHAR(3) REFERENCES Airports100(AirportCode) ON DELETE CASCADE,
-    DestAirport VARCHAR(3) REFERENCES Airports100(AirportCode) ON DELETE CASCADE,
+    SourceAirport VARCHAR(3) REFERENCES airports100(AirportCode) ON DELETE CASCADE,
+    DestAirport VARCHAR(3) REFERENCES airports100(AirportCode) ON DELETE CASCADE,
     PRIMARY KEY (Airline, FlightNo)
 );
