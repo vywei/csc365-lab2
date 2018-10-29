@@ -2,7 +2,8 @@
 Victor Wei - vywei@calpoly.edu
 Eddie Kesicki - ekesicki@calpoly.edu
 */
-CREATE TABLE rooms (
+
+CREATE TABLE Rooms (
     RoomId VARCHAR(3),
     roomName VARCHAR(50),
     beds INT,
@@ -13,15 +14,15 @@ CREATE TABLE rooms (
     PRIMARY KEY (RoomId)
 );
 
-CREATE TABLE reservations (
+CREATE TABLE Reservations (
     Code INT,
     Room VARCHAR(3) REFERENCES rooms(RoomId) ON DELETE CASCADE,
     CheckIn DATE,
-    CheckOut Date, 
-    Rate INT,
+    CheckOut Date,
+    Rate FLOAT(6,2),
     LastName VARCHAR(30),
     FirstName VARCHAR (30),
     Adults INT,
     Kids INT,
-    PRIMARY KEY (Room)
+    PRIMARY KEY (Code)
 );

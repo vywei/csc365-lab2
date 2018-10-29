@@ -2,5 +2,5 @@
 Victor Wei - vywei@calpoly.edu
 Eddie Kesicki - ekesicki@calpoly.edu
 */
-SELECT COUNT(*) as rooms from rooms;
-SELECT COUNT(*) as reservations from reservations;
+SELECT COUNT(*) as Rooms from Rooms;
+SELECT COUNT(*) as Reservations from Reservations;
