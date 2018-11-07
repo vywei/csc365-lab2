@@ -10,4 +10,4 @@ Pair sumbmission for lab4 4, includes
 -STUDENTS-info.sql
 
 To run scripts:
-- enter mysql and execue use-<database>; followed by  \. <database>-info.sql
+- enter mysql and execute use-<database>; followed by  \. <database>-info.sql
