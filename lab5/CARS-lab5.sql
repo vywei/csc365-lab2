@@ -11,16 +11,11 @@ WHERE cd.Id = cn.Id, cn.Model = m.Id, m.Maker = cm.Id, cm.Country = countries.Id
 
 -- Q1
 select cn.description as Description, cd.YearMade, cn.Model
-from carsData as cd, carNames as cn
-where cd.Id = cn.Id and
+from carsData as cd, carNames as cn, carsData as cd2, carNames as cn2
+where cd.Id = cn.Id and cd2.Id = cn2.Id and
     cd.YearMade > 1980 and
-    cd.MPG > (
-        select MPG
-        from carsData, carNames
-        where carsData.Id = carNames.Id and
-        YearMade = 1982 and
-        Description = 'honda civic'
-    );
+    cd2.YearMade = 1982 and cn2.Description = 'honda civic' and
+    cd.MPG > cd2.MPG;
 
 -- Q2
 select ROUND(avg(cd.Horsepower), 2) as Average, max(cd.Horsepower) as Max,
@@ -33,26 +28,18 @@ where cd.Id = cn.Id and
     cd.YearMade <= 1976;
 
 -- Q3
-select count(*) as CountCars
-from (
-    select cn.Id
-    from carsData as cd, carNames as cn
-    where cd.Id = cn.Id and
-        cd.YearMade = 1971 and
-        cd.Accelerate < (
-            select carsData.Accelerate
-            from carsData, carNames
-            where carsData.Id = carNames.Id and
-            carsData.YearMade = 1972 and
-            carNames.Description = 'volvo 145e (sw)'
-        )
-    ) as id;
+
+select count(cn.Id) as CountCars
+from carsData as cd, carNames as cn, carsData as cd2, carNames as cn2
+where cd.Id = cn.Id and cd2.Id = cn2.Id and
+    cd.YearMade = 1971 and
+    cd2.YearMade = 1972 and
+    cn2.Description = 'volvo 145e (sw)' and
+    cd.Accelerate < cd2.Accelerate;
 
 -- Q4
-select count(DISTINCT Model) as CountManufacturers
-from (
-    select cn.Model
-    from carsData as cd, carNames as cn
-    where cd.Id = cn.Id and
-        cd.Weight > 4000
-) as models;
+
+select count(DISTINCT cn.Model) as CountManufacturers
+from carsData as cd, carNames as cn
+where cd.Id = cn.Id and
+    cd.Weight > 4000;
