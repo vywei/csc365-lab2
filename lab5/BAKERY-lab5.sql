@@ -6,7 +6,7 @@
 
 -- Q1
 select c.FirstName, c.LastName
-from customers as c, items as i, goods as g, receipts as r
+from customers c, items i, goods g, receipts r
 where g.GId = i.Item and
     i.Receipt = r.RNumber and
     r.Customer = c.CId and
@@ -18,7 +18,7 @@ order by c.LastName;
 
 -- Q2
 (select r.saleDate
-from receipts as r, customers as c
+from receipts r, customers c
 where r.Customer = c.CId and
     c.FirstName = 'ALMETA' and c.LastNAme = 'DOMKOWSKI')
 union
@@ -30,7 +30,7 @@ order by saleDate;
 
 -- Q3
 select ROUND(sum(g.price), 2) as total
-from customers as c, items as i, goods as g, receipts as r
+from customers c, items i, goods g, receipts r
 where g.GId = i.Item and
     i.Receipt = r.RNumber and
     r.Customer = c.CId and
@@ -39,7 +39,7 @@ where g.GId = i.Item and
 
 -- Q4
 select ROUND(sum(g.price), 2) as total
-from items as i, goods as g, receipts as r
+from items i, goods g, receipts r
 where g.GId = i.Item and
     i.Receipt = r.RNumber and
     date_format(r.saleDate, '%M %Y') = 'October 2007' and
